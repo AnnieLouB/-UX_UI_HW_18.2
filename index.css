@@ -1,0 +1,110 @@
+
+
+/* Grid CSS */
+
+#heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 75% 25%;
+    grid-template-areas:
+    "featuredProject";
+}
+
+#featuredProduct {
+    grid-area: featuredProduct;
+}
+
+.heroGridArea {
+    display: grid;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    font-family: "work Sans";
+    color:#022E40;
+    grid-template-areas:
+    "hover"
+    "disabled";
+  }
+
+  .mobileImage {
+    position: absolute;
+    left:0;
+    top:85px;
+    width:233px;
+    margin-left: 5%;
+  }
+
+  .desktopImage {
+    position:relative;
+    width: 900px;
+  }
+
+  .projects {
+    grid-template-rows: 300px;
+
+  }
+
+  .hoverMe {
+    grid-area: hover;
+    background-color:#DFC9CC;
+    color:#022E40;
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  /* active state */
+  .hoverMe:hover {
+    background-color:#dfd2d4;
+  }
+.button {
+    background-color: #DFC9CC;
+    padding: 30px 50px;
+    color: #022E40;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    }
+
+
+/* Project grid   CSS */
+
+
+#projectGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "usdt, arloom, cranefly"
+}
+
+#usdt {
+    grid-area: usdt;
+    background-color:#B1CABC;
+
+}
+
+#arloom {
+    grid-area: arloom;
+    background-color:#B1CABC;
+
+}
+
+#cranefly {
+  grid-area: cranefly;
+  background-color:#B1CABC;
+}
+
+.projectGridArea {
+    margin: 50px;
+    display: grid;
+    align-content:space-between
+  }
