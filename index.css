@@ -2,7 +2,7 @@
 
 /* Grid CSS */
 
-#heroGrid {
+/* #heroGrid {
     margin: 0px 5%;
     display: grid;
     min-height: 500px;
@@ -45,7 +45,75 @@
 
   .projects {
     grid-template-rows: 300px;
+  }
 
+.hoverMe {
+  grid-area: hover;
+  background-color:#DFC9CC;
+  color:#022E40;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+  border-radius: 8px;
+  transition: 0.3s;
+   }
+  .hoverMe:hover {
+    background-color:#dfd2d4; 
+  }
+
+/* Project grid CSS */
+
+#projectGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "usdt arloom cranefly"
+    "usdtText arloomText craneflyText";
+}
+
+#usdt {
+  grid-area:usdt;
+  background-color: none;
+
+}
+
+#arloom {
+  grid-area:arloom;
+  background-color: none;
+
+}
+
+#cranefly {
+grid-area:cranefly;
+background-color: none;
+}
+
+#usdtText {
+  grid-area:usdtText;
+  background-color: #B1CABC;
+
+}
+
+#arloomText {
+  grid-area:arloomText;
+  background-color: #B1CABC;
+} 
+
+#craneflyText {
+  grid-area:craneflyText;
+  background-color:#B1CABC;
+}
+
+
+.projectGridArea {
+  margin: 0px;
+  display: grid;
+  cursor: pointer;
+  height: fit-content;
+  display: grid;
+  align-content: end;
   }
 
   .hoverMe {
@@ -55,56 +123,18 @@
     width: 150px;
     text-align: center;
     height: 50px;
+    margin-bottom: 20px;
     border-radius: 8px;
     transition: 0.3s;
-  }
-  /* active state */
-  .hoverMe:hover {
-    background-color:#dfd2d4;
-  }
-.button {
-    background-color: #DFC9CC;
-    padding: 30px 50px;
-    color: #022E40;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
+     }
+    .hoverMe:hover {
+      background-color:#dfd2d4; 
     }
+  
 
-
-/* Project grid   CSS */
-
-
-#projectGrid {
-    margin: 0px 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "usdt, arloom, cranefly"
-}
-
-#usdt {
-    grid-area: usdt;
-    background-color:#B1CABC;
-
-}
-
-#arloom {
-    grid-area: arloom;
-    background-color:#B1CABC;
-
-}
-
-#cranefly {
-  grid-area: cranefly;
-  background-color:#B1CABC;
-}
-
-.projectGridArea {
-    margin: 50px;
-    display: grid;
-    align-content:space-between
-  }
+  /* .textArea {
+      background-color: rgba(0,0,0,0.7);
+      padding: 5px;
+      height: 25px;
+      color: black;
+      font-size: 18px; */
