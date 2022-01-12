@@ -1,66 +1,5 @@
 
 
-/* Grid CSS */
-
-/* #heroGrid {
-    margin: 0px 5%;
-    display: grid;
-    min-height: 500px;
-    height: 70vh;
-    grid-template-rows: 75% 25%;
-    grid-template-areas:
-    "featuredProject";
-}
-
-#featuredProduct {
-    grid-area: featuredProduct;
-}
-
-.heroGridArea {
-    display: grid;
-    position: relative;
-}
-
-.grid {
-    display: grid;
-    font-family: "work Sans";
-    color:#022E40;
-    grid-template-areas:
-    "hover"
-    "disabled";
-  }
-
-  .mobileImage {
-    position: absolute;
-    left:0;
-    top:85px;
-    width:233px;
-    margin-left: 5%;
-  }
-
-  .desktopImage {
-    position:relative;
-    width: 900px;
-  }
-
-  .projects {
-    grid-template-rows: 300px;
-  }
-
-.hoverMe {
-  grid-area: hover;
-  background-color:#DFC9CC;
-  color:#022E40;
-  width: 150px;
-  text-align: center;
-  height: 50px;
-  border-radius: 8px;
-  transition: 0.3s;
-   }
-  .hoverMe:hover {
-    background-color:#dfd2d4; 
-  }
-
 /* Project grid CSS */
 
 #projectGrid {
@@ -93,17 +32,22 @@ background-color: none;
 #usdtText {
   grid-area:usdtText;
   background-color: #B1CABC;
+  height:300px;
 
 }
 
 #arloomText {
   grid-area:arloomText;
   background-color: #B1CABC;
+  height:300px;
+  padding-top: 0;
 } 
 
 #craneflyText {
   grid-area:craneflyText;
   background-color:#B1CABC;
+  height:300px;
+  align-content: top;
 }
 
 
@@ -113,28 +57,64 @@ background-color: none;
   cursor: pointer;
   height: fit-content;
   display: grid;
-  align-content: end;
   }
 
   .hoverMe {
     grid-area: hover;
     background-color:#DFC9CC;
     color:#022E40;
-    width: 150px;
+    width: 160px;
     text-align: center;
-    height: 50px;
+    height: 60px;
     margin-bottom: 20px;
+    margin-right: 20px;
     border-radius: 8px;
     transition: 0.3s;
+    font-size:20px;
      }
     .hoverMe:hover {
       background-color:#dfd2d4; 
     }
-  
 
-  /* .textArea {
-      background-color: rgba(0,0,0,0.7);
-      padding: 5px;
-      height: 25px;
-      color: black;
-      font-size: 18px; */
+
+    /* Typography*/
+
+typography {
+font-family: 'Lora', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+  h2{
+  font-family:'Lora', serif;
+  font-style:normal;
+  font-size:40px;
+  font-weight: 140px;
+  margin: 0px 0px;
+  color:#022E40;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+
+p {
+  font-family:'Work Sans', sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  color:#022E40;
+}
+
+
+@media only screen and (max-width: 600px) {
+        #projectGrid {
+          grid-template-rows: 33% 33% 33%;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "usdt"
+            "arloom"
+            "cranefly"
+            "usdtText"
+            "arloomText"
+            "craneflyText";
+        }
+      }
