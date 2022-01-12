@@ -2,6 +2,12 @@
 
 /* Project grid CSS */
 
+
+body {
+  background-color: #F9F5EB;
+  display: block;
+}
+
 #projectGrid {
     margin: 0px 5%;
     display: grid;
